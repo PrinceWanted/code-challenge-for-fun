@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 1920px) {
+      body {
+        background: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      body {
+        background: url(./images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .row {
+      margin-top: 15%;
+    }
+
+    .card {
+      border-radius: 13px;
+    }
+    .card img {
+      border-top-left-radius: 13px;
+      border-top-right-radius: 13px;
+    }
+
+    .btn-gp {
+      margin-top: 15px;
+    }
+
+    #order-itm {
+      max-height: 25%;
+      margin-top: 0%;
+      margin-bottom: 20px;
+      background-color: rgba(246, 246, 246, 0.719);
+    }
+    .btn{
+      border-radius: 13px;
+    }
+
+    .item-info {
+      margin-top: 0%;
+      padding: 5px 0;
+    }
+
+    .item-txt {
+      margin: 0%;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="row justify-content-center">
+    <div class="card text-center" style="width: 20rem;">
+      <img class="card-img-top" src="./images/illustration-hero.svg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Order Summary</h5>
+        <p class="card-text">You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!</p>
+
+        <div class="row rounded" id="order-itm">
+          <img class="col-3 align-self-center" src="./images/icon-music.svg" alt="msc">
+          <div class="col-6 item-info row">
+            <p class="col-12 item-txt">Annual Plan</p>
+            <p class="col-12 item-txt">$59.99/year</p>
+          </div>
+          <a class="col-4  align-self-center" href="#">Change</a>
+        </div>
+
+
+        <div class="btn-gp">
+          <a href="#" class="btn btn-primary w-100">Proceed to Payment</a>
+          <a href="#" class="btn btn-white text-dark">Cancel Order</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">PrinceWanted</a>.
+  </div>
+</body>
+
+</html>
